@@ -1,0 +1,16 @@
+{
+  "name": "@trusty_abhishek/form-builder",
+  "version": "1.0.5",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm --external react,next,react-dom"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "next": ">=13"
+  }
+}
